@@ -1,0 +1,35 @@
+{
+  "name": "duarte-os-ai",
+  "version": "4.31.1",
+  "description": "Super AIOX - Meta-framework de orquestração de agentes IA para desenvolvimento full-stack",
+  "main": ".aiox-core/index.js",
+  "module": ".aiox-core/index.esm.js",
+  "types": ".aiox-core/index.d.ts",
+  "bin": {
+    "duarte-os-ai": ".aiox-core/bin/aiox-core.js",
+    "aiox-core": ".aiox-core/bin/aiox-core.js"
+  },
+  "scripts": {
+    "postinstall": "cd .aiox-core && npm install --omit=dev 2>/dev/null || true",
+    "build": "cd .aiox-core && npm run build",
+    "test": "cd .aiox-core && npm test",
+    "lint": "cd .aiox-core && npm run lint"
+  },
+  "keywords": [
+    "aiox",
+    "meta-agent",
+    "ai-orchestration",
+    "fullstack",
+    "development-tools",
+    "super-aiox"
+  ],
+  "author": "Robson Duarte",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robsonsduarte/duarte-os-ai.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
