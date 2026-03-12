@@ -9,7 +9,8 @@
  */
 
 const { Command } = require('commander');
-const { seedMetrics } = require('../../../quality/seed-metrics');
+let seedMetrics;
+try { ({ seedMetrics } = require('../../../quality/seed-metrics')); } catch { seedMetrics = null; }
 
 /**
  * Create the seed subcommand

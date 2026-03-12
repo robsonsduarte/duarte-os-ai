@@ -6,4 +6,5 @@
  * Delegates to cli/index.js for all command handling.
  */
 
-require('../cli/index.js');
+const { run } = require('../cli/index.js');
+run();

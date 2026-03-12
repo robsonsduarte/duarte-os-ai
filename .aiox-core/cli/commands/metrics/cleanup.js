@@ -9,7 +9,8 @@
  */
 
 const { Command } = require('commander');
-const { MetricsCollector } = require('../../../quality/metrics-collector');
+let MetricsCollector;
+try { ({ MetricsCollector } = require('../../../quality/metrics-collector')); } catch { MetricsCollector = null; }
 
 /**
  * Create the cleanup subcommand
